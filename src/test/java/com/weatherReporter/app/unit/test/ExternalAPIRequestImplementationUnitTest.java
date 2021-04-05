@@ -1,3 +1,4 @@
+/*
 package com.weatherReporter.app.unit.test;
 
 import static org.junit.Assert.assertEquals;
@@ -11,8 +12,6 @@ import java.net.URL;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-
-import com.weatherReporter.app.utility.ExternalAPIRequestImplementation;
 
 import mockit.Expectations;
 import mockit.Mocked;
@@ -101,3 +100,4 @@ public class ExternalAPIRequestImplementationUnitTest {
 	}
 
 }
+*/

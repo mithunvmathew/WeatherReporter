@@ -1,0 +1,8 @@
+server:
+  port: 8080
+  context-path: /weatherReporter/
+
+#External Service(weatherstack) Api Key
+weatherstack:
+  url: http://api.weatherstack.com/forecast
+  key: 32895e583cb33e7ae3aef6d76d07f1aa

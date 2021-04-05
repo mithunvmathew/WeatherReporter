@@ -7,10 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class CurrentWeather {
-	
-	float temperature;
-	float windSpeed;
-	float humidity;
-	int uvIndex;
+public class Location {
+    String name;
+    String country;
 }

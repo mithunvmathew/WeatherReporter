@@ -6,8 +6,6 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-import com.weatherReporter.app.model.Error;
-
 /**
  * The Class GlobalExceptionHandler.
  */
@@ -21,9 +19,8 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 	 * @return the response entity
 	 */
 	@ExceptionHandler(Exception.class)
-	public ResponseEntity<Error> handle(Exception ex) {
-		Error error = new Error(HttpStatus.INTERNAL_SERVER_ERROR.value(), ex.getMessage());
-		return new ResponseEntity<Error>(error, HttpStatus.INTERNAL_SERVER_ERROR);
+	public ResponseEntity handle(Exception ex) {
+		return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 
 }
